@@ -15,6 +15,14 @@
             "ArcherZdip\\Setting\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "ArcherZdip\\Setting\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
     "require": {
         "php": ">=5.6"
     },
