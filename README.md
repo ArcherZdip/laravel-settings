@@ -4,19 +4,19 @@
 ## Installation
 You can install the package via composer:
 ```php
-composer require archerzdip/laravel-setting
+composer require archerzdip/laravel-settings
 ```
 ### Publish, migrate
-**By running php artisan vendor:publish --provider="ArcherZdip\Setting\SettingsServiceProvider" in your project all files for this package will be published. For this package, it's only a migration. Run php artisan migrate to migrate the table. There will now be an options table in your database.**
+By running php artisan vendor:publish --provider="ArcherZdip\Setting\SettingsServiceProvider" in your project all files for this package will be published. For this package, it's only a migration. Run php artisan migrate to migrate the table. There will now be an options table in your database.
 
 ## Usage
 **With the setting() helper, we can get and set settings:**
 ```php
 // Get setting object
-option();
+setting();
 
 // Get setting value
-option('key','default');
+setting('key','default');
 
 // Set setting value
 setting_set(string $key, $valve, $type = null, $description = null);
@@ -31,7 +31,7 @@ setting_remove(string $key);
 
 **If you want to check if an setting exists, you can use the facade:**
 
-use Option;
+use Setting;
 ```php
 $check = Setting::exists('someKey');
 ```
@@ -47,4 +47,6 @@ php artisan setting:get {someKey}
 ```
 
 ## Testing
+```php
 $ composer test
+```
