@@ -1,0 +1,19 @@
+{
+    "name": "archerzdip/laravel-settings",
+    "description": "Global key-value store in the database, like int string array json and so on.",
+    "authors": [
+        {
+            "name": "archerzdip",
+            "email": "646121218@qq.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "ArcherZdip\\Setting\\": "src"
+        }
+    },
+    "require": {}
+}
