@@ -31,8 +31,8 @@ setting_remove(string $key);
 
 **If you want to check if an setting exists, you can use the facade:**
 
-use Setting;
 ```php
+use Setting;
 $check = Setting::exists('someKey');
 ```
 
