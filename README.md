@@ -6,6 +6,13 @@ You can install the package via composer:
 ```php
 composer require archerzdip/laravel-settings
 ```
+or
+```php
+// composer.json
+"archerzdip/laravel-settings":"dev-master"
+// composer update
+composer update
+```
 ### Publish, migrate
 By running php artisan vendor:publish --provider="ArcherZdip\Setting\SettingsServiceProvider" in your project all files for this package will be published. For this package, it's only a migration. Run php artisan migrate to migrate the table. There will now be an options table in your database.
 
