@@ -52,8 +52,3 @@ And it is also possible to get setting within the console:
 ```php
 php artisan setting:get {someKey}
 ```
-
-## Testing
-```php
-$ composer test
-```
