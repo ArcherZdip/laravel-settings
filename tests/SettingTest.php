@@ -5,11 +5,12 @@
  * Date: 2019-02-19
  * Time: 13:43
  */
+
 namespace ArcherZdip\Setting\Test;
 
+use Tests\TestCase;
 use ArcherZdip\Setting\Setting;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Tests\TestCase;
 
 class SettingTest extends TestCase
 {
@@ -30,7 +31,7 @@ class SettingTest extends TestCase
      */
     public function test_set()
     {
-        setting_set('key','value');
+        setting_set('key', 'value');
 
         $this->assertDatabaseHas('settings', ['key' => 'key', 'value' => 'value']);
     }
@@ -41,9 +42,9 @@ class SettingTest extends TestCase
      */
     public function test_set_array()
     {
-        setting_set('foo', array(
+        setting_set('foo', [
             'name' => 'holle world'
-        ), 'array');
+        ], 'array');
 
         $this->assertEquals('holle world', setting('foo')['name']);
     }
@@ -65,7 +66,7 @@ class SettingTest extends TestCase
      */
     public function test_get_default()
     {
-        $this->assertEquals('holle world', setting('foo' ,'holle world'));
+        $this->assertEquals('holle world', setting('foo', 'holle world'));
     }
 
     /**

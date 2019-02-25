@@ -6,7 +6,7 @@
  * Time: 12:43
  */
 
-if (! function_exists('setting')) {
+if (!function_exists('setting')) {
     /**
      * Get setting value or object.
      *
@@ -24,7 +24,7 @@ if (! function_exists('setting')) {
     }
 }
 
-if (! function_exists('setting_set')) {
+if (!function_exists('setting_set')) {
     /**
      * Set setting value.
      *
@@ -40,11 +40,11 @@ if (! function_exists('setting_set')) {
     }
 }
 
-if (! function_exists('setting_exists')) {
+if (!function_exists('setting_exists')) {
     /**
      * Check the specified setting exits.
      *
-     * @param  string  $key
+     * @param  string $key
      * @return mixed
      */
     function setting_exists(string $key)
@@ -53,7 +53,7 @@ if (! function_exists('setting_exists')) {
     }
 }
 
-if (! function_exists('setting_remove')) {
+if (!function_exists('setting_remove')) {
     /**
      * Remove the setting value.
      *

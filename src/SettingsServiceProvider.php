@@ -2,9 +2,9 @@
 
 namespace ArcherZdip\Setting;
 
+use Illuminate\Support\ServiceProvider;
 use ArcherZdip\Setting\Console\SettingGetCommand;
 use ArcherZdip\Setting\Console\SettingSetCommand;
-use Illuminate\Support\ServiceProvider;
 
 class SettingsServiceProvider extends ServiceProvider
 {

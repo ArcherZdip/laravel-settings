@@ -8,8 +8,8 @@
 
 namespace ArcherZdip\Setting;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Collection;
 
 class Setting extends Model
 {
@@ -26,7 +26,7 @@ class Setting extends Model
     ];
 
     protected $attributes = [
-        'type' => 'string',
+        'type'        => 'string',
         'description' => '',
     ];
 
@@ -86,12 +86,12 @@ class Setting extends Model
     /**
      * Remove/delete the specified setting value.
      *
-     * @param  string  $key
+     * @param  string $key
      * @return bool
      */
     public function remove($key)
     {
-        return (bool) self::where('key', $key)->delete();
+        return (bool)self::where('key', $key)->delete();
     }
 
     /**
