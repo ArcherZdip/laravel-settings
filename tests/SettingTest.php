@@ -77,6 +77,7 @@ class SettingTest extends TestCase
     {
         setting()->set('foo', 'holle world');
         $this->assertDatabaseHas('settings', ['key' => 'foo', 'value' => 'holle world']);
+
         setting_remove('foo');
         $this->assertDatabaseMissing('settings', ['key' => 'foo', 'value' => 'bar']);
     }

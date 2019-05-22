@@ -1,6 +1,7 @@
 {
     "name": "archerzdip/laravel-settings",
     "description": "Global key-value store in the database, like int string array json and so on.",
+    "license": "MIT",
     "authors": [
         {
             "name": "archerzdip",
